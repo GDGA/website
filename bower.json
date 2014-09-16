@@ -1,0 +1,51 @@
+{
+  "name": "website",
+  "version": "0.0.1",
+  "homepage": "https://github.com/GDGAllahabad/website",
+  "authors": [
+    "Vikram Tiwari <Vikramtheone1@gmail.com>"
+  ],
+  "description": "gdg website",
+  "main": "gdg.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "gdg",
+    "google",
+    "developer",
+    "groups"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "core-ajax": "Polymer/core-ajax",
+    "core-collapse": "Polymer/core-collapse#>=0.3.0  <1.0.0",
+    "core-drawer-panel": "Polymer/core-drawer-panel#>=0.3.0  <1.0.0",
+    "core-header-panel": "Polymer/core-header-panel#>=0.3.0  <1.0.0",
+    "core-icon-button": "Polymer/core-icon-button#>=0.3.0 <1.0.0",
+    "core-item": "Polymer/core-item#>=0.3.0  <1.0.0",
+    "core-layout": "Polymer/core-layout",
+    "core-localstorage": "Polymer/core-localstorage",
+    "core-menu": "Polymer/core-menu",
+    "core-overlay": "Polymer/core-overlay",
+    "core-pages": "Polymer/core-pages",
+    "core-scaffold": "Polymer/core-scaffold",
+    "core-tooltip": "Polymer/core-tooltip",
+    "font-roboto": "Polymer/font-roboto#>=0.4.0 <1.0.0",
+    "paper-button": "Polymer/paper-button#>=0.3.0 <1.0.0",
+    "paper-icon-button": "Polymer/paper-icon-button#>=0.3.0 <1.0.0",
+    "paper-tabs": "Polymer/paper-tabs#~0.3.2",
+    "polymer": "Polymer/polymer#~0.4.0",
+    "core-elements": "Polymer/core-elements#~0.4.0",
+    "paper-elements": "Polymer/paper-elements#~0.4.0",
+    "platform": "Polymer/platform#~0.4.0"
+  }
+}
