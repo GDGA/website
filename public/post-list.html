@@ -1,10 +1,18 @@
 <link rel="import" href="../components/polymer/polymer.html">
 <link rel="import" href="../post-service/post-service.html">
 <link rel="import" href="post-card.html">
-<link rel="stylesheet" type="text/css" href="./css/post-list.css">
 
 <polymer-element name="post-list" attributes="show">
   <template>
+    <style>
+    :host {
+      display: block;
+      width: 100%;
+    }
+    post-card {
+      margin-bottom: 30px;
+    }
+    </style>
 
     <post-service id="service" posts="{{posts}}"></post-service>
     
@@ -22,5 +30,12 @@
     </div>
   </template>
 
+  <script>
+  Polymer({
+    handleFavorite: function(event, detail, sender) {
+      var post = sender.templateInstance.model.post;
+      this.$.service.setFavorite(post.uid, post.favorite);
+    }
+  });
+  </script>
 </polymer-element>
-<script type="text/javascript" src='./js/post-list.js'></script>
