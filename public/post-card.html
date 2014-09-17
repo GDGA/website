@@ -3,8 +3,9 @@
 
 <polymer-element name="post-card">
     <template>
+        <link rel="stylesheet" type="text/css" href="./css/post-card.css">
         <style>
-        :host {
+        /*:host {
             display: block;
             position: relative;
             background-color: white;
@@ -40,7 +41,7 @@
         }
         :host([favorite]) core-icon-button {
             color: #da4336;
-        }
+        }*/
         </style>
 
         <div class="card-header" layout horizontal center>
@@ -55,8 +56,9 @@
 
         <content></content>
     </template>
+    <script type="text/javascript" src='./js/post-card.js'></script>
     <script>
-    Polymer({
+    /*Polymer({
         publish: {
             favorite: {
                 value: false,
@@ -67,6 +69,6 @@
             this.favorite = !this.favorite;
             this.fire('favorite-tap');
         }
-    });
+    });*/
     </script>
 </polymer-element>
