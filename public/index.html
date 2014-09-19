@@ -15,8 +15,6 @@
     <link rel="import" href="../components/core-toolbar/core-toolbar.html">
     <link rel="import" href="../components/paper-tabs/paper-tabs.html">
     <link rel="import" href="post-list.html">
-    <link rel="import" href="../components/google-map/google-map.html">
-    <link rel="import" href="../components/google-map/google-map-directions.html">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
 </head>
 
@@ -29,13 +27,11 @@
             <paper-tabs id="tabs" selected="all" self-end>
                 <paper-tab name="all">All</paper-tab>
                 <paper-tab name="favorites">Favorites</paper-tab>
-                <paper-tab name="locations">Locations</paper-tab>
             </paper-tabs>
 
         </core-toolbar>
 
         <div class="container" layout vertical center>
-            <google-map show="locations" latitude="37.779" longitude="-122.3892" disableDefaultUI fit></google-map>
             <post-list show="all"></post-list>
         </div>
 
