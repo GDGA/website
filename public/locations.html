@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>Google Developers Group - Allahabad</title>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <script src="../components/platform/platform.js"></script>
+    <link rel="import" href="../components/google-map/google-map.html">
+    <link rel="import" href="../components/google-map/google-map-directions.html">
+
+
+    <link rel="stylesheet" type="text/css" href="./css/locations.css">
+</head>
+
+<body fullbleed>
+
+    <google-map latitude="26.40" longitude="81.50" zoom="8" disableDefaultUI fit>
+        <google-map-marker latitude="25.343507" longitude="81.910669" title="UCER-Allahabad" draggable="false">
+            <img src="./images/united.png" />
+        </google-map-marker>
+        <google-map-marker latitude="26.8848" longitude="81.058216" title="BBD-Lucknow" draggable="false">
+            <img src="./images/bbd.png" />
+        </google-map-marker>
+        <google-map-marker latitude="25.43123" longitude="81.77114" title="IIIT-Allahabad" draggable="false">
+            <img src="./images/iiit.jpg" />
+        </google-map-marker>
+    </google-map>
+    <google-map-directions startAddress="San Francisco" endAddress="Mountain View"></google-map-directions>
+
+
+    <script type="text/javascript" src='./js/locations.js'></script>
+</body>
+
+</html>
